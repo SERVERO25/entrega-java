@@ -10,16 +10,14 @@ public class Do_While_numero_aleatorio {
 		System.out.println("Se diran numeros entre 1 y 100 a menos de que niegues (si - no)");
 		String resp = sc.nextLine();
 		
-		while(resp.equals("si")) {
+		do {
 			int numr = rand.nextInt(100) + 1;
 			System.out.print("El numero aleatorio obtenido fue: " + numr);
 			System.out.println("... desea continuar?");
 			resp = sc.nextLine();
-		}
+		} while(resp.equals("si"));
+		
 		System.out.println("Se detuvo el ciclo a peticion del usuario");
-		
-		
-		
 		
 		sc.close();
 
